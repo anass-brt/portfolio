@@ -1,0 +1,106 @@
+.width-content{
+    width: 85%;
+    margin:auto
+}
+
+.content-info{
+    padding: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .content-info-txt{
+        color: rgb(0, 0, 0);
+        width: 60%;
+        .my-name{
+          font-family: 'Abril Fatface', serif;
+           // font-family: 'Anton', sans-serif;
+           // font-family: 'Rubik Doodle Shadow', system-ui;
+             color:yellow;
+             font-size: 50px;
+             font-weight: bold;
+        }
+        .txt-job{
+        color: rgb(0, 0, 0);
+        font-size: 40px;
+        font-weight: bold;
+        }
+
+        .description{
+            font-family: 'Sora', sans-serif;
+            text-align: justify;
+        }
+
+        .btn-info-contact{
+            background-color: transparent;
+            border: #2abbdb solid 1px !important;
+            border-radius: 5px;
+            color: white;
+            width: 120px;
+            text-align: center;
+            padding: 5px 0;
+        }
+        .btn-info-contact:hover{
+            background-color:#2abbdb ;
+        }
+
+        .btn-info-download{
+            border-radius: 5px;
+            color: rgb(255, 255, 255);
+            width: 120px;
+            display: inline-block;
+            text-align: center;
+            padding: 5px 0;
+            background-color: yellow; 
+            border: none;
+            text-decoration: none;
+            font-weight: bold;
+        }
+.btn-info-download:hover{
+    color: yellow;
+    border: 1px solid yellow;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+.icon-social{
+    font-size: 30px;
+    font-weight: bold;
+    color:yellow;
+}
+        }
+        .content-info-img{
+            width:30%;
+            .img-code{
+                width: 100%;
+                border-radius: 100%;
+                background-color: yellow;
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            }
+        }
+
+     
+}
+
+
+@media only screen and (max-width: 768px) and (min-width: 320px)  {
+
+        .content-info{
+            display: block;
+            text-align: center;
+            padding:70px 30px;
+            .content-info-txt{
+                width: 100% !important;
+                    
+                }
+                .content-info-img{
+                    width:100%;
+                    margin: auto;
+                    .img-code{
+                        width: 100% !important;
+                        // border-radius: 5px;
+                        // background-color: yellow;
+                    }
+                }
+        }
+
+}

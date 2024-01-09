@@ -1,0 +1,94 @@
+
+.bg-card{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+           background-color: yellow;
+       // background-image: -webkit-linear-gradient(150deg, yellow 35%, white 35%);
+       background-image: -webkit-linear-gradient(30deg, yellow 50%, white 50%);
+       box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    }
+
+    .flip{
+      
+        -webkit-transform: scaleY(-1);
+        transform: scaleY(-1);
+    }
+
+
+
+
+.card-experince{
+    // height: 400px;
+    width: 100%;
+    position: relative;
+    // background-image: -webkit-linear-gradient(30deg, yellow 50%, white 50%);
+
+    .content-card{
+        border-radius: 5px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+
+        .title-experince{
+            font-style: italic;
+            font-weight: bold;
+            font-size: 30px;
+            line-height: 30px;
+            color: #807e7b;
+        }
+        .role-experince{
+            font-style: italic;
+            font-weight: bold;text-decoration: underline;
+            font-size: 15px;
+            color: #807e7b;
+        }
+
+        .type-experience{
+            color: #807e7b;
+            font-weight: bold;
+        }
+
+        .img-card{
+            width: 50%;
+            height: 100%;
+            margin: auto;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 5px;
+
+            .bg-black-opacity{
+                width: 100%;
+                height: 100%;
+                background-color: black;
+                opacity: 50%;
+                border-radius: 5px;
+            }
+        }
+    }
+}
+
+.mobile-bg-experience{
+
+    background-image: -webkit-linear-gradient(30deg, yellow 50%, white 50%);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 5px;
+.title-experience{
+    font-style: italic;
+          font-weight: bold;
+          font-size: 30px;
+          color: #807e7b;
+}
+
+.role-experience{
+    font-style: italic;
+          font-weight: bold;text-decoration: underline;
+          font-size: 15px;
+          color: #807e7b;
+}
+    .type-experience{
+        color: #807e7b;
+        font-weight: bold;
+    }
+}

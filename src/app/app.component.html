@@ -1,0 +1,95 @@
+
+
+<div class="navbar-content">
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid mx-1">
+      <!-- <a class="navbar-brand" (click)="onClick('header')">ANASS BOUROUTI</a> -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="bi bi-list"></i>
+      </button>
+      <div class="collapse navbar-collapse m-auto" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" (click)="onClick('header')">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" (click)="onClick('skills')" >Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"  tabindex="-1" aria-disabled="true" (click)="onClick('experiences')">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"  tabindex="-1" aria-disabled="true" (click)="onClick('recentworks')">Recent Works</a>
+          </li>
+          
+          <!-- <li class="nav-item">
+            <a class="nav-link"  tabindex="-1" aria-disabled="true" (click)="onClick('formation')">Formation</a>
+          </li> -->
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+</div>
+
+<div class="body-content">
+
+  <div id="header" class="header-content">
+    <app-header></app-header>
+  </div>
+
+
+
+    <div id="skills" class="skills-content">
+      <div class="text-center py-4 title-grand">Skills</div>
+
+      <div class="m-auto row text-center" style="width: 90%;">
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 my-3" ngf >
+          <a class="type-competences"  (click)="skillsDataWeb=dataWeb.dataFrontEnd;skillsDataMobile=dataMobile.dataFrontEnd">Front-End Developer</a>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 my-3" >
+          <a class="type-competences" (click)="skillsDataWeb=dataWeb.dataBackEnd;skillsDataMobile=dataMobile.dataBackEnd">Back-End Developer</a>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 my-3" >
+          <a class="type-competences"  (click)="skillsDataWeb=dataWeb.dataMobile;skillsDataMobile=dataMobile.dataMobile">Mobile Developer</a>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 my-3" >
+          <a class="type-competences"  (click)="skillsDataWeb=dataWeb.dataDesignTools;skillsDataMobile=dataMobile.dataDesignTools">UI Design Tools</a>
+        </div>
+      </div>
+
+      <app-skills [dataWeb]="skillsDataWeb" [dataMobile]="skillsDataMobile"></app-skills>
+    </div>
+
+  
+
+
+
+  <div id="experiences" class="experiences-content">
+    <div class="text-center py-4 title-grand">Experience</div>
+    <app-experience></app-experience>
+  </div>
+
+  <div id="recentworks" class="experiences-content pb-5">
+    <div class="text-center py-4 title-grand">Recent Works</div>
+    <app-recent-works></app-recent-works>
+  </div>
+
+  <!-- <div id="formation" class="formation-content pb-5">
+    <div class="text-center py-4  title-grand">Formation</div>
+  <app-formation></app-formation>
+  </div> -->
+
+  <div id="footer" class="footer-content">
+    <div style="background-color: yellow;">
+      <div class="text-center py-4 title-grand"></div>
+ <app-footer></app-footer>
+ </div>
+
+  </div>
+
+</div>

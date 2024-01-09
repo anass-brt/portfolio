@@ -1,0 +1,36 @@
+*{
+    text-decoration: none;
+}
+.width-content{
+    width: 80%;
+    margin:auto
+}
+.width-content-mobile{
+    width: 90%;
+    margin:auto
+}
+.bg-recentworks{
+
+    background-image: -webkit-linear-gradient(30deg, yellow 50%, white 50%);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 5px;
+
+ 
+    .image-card-recentworks{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        border-radius: 10px;
+    }
+    .title-recentworks{
+        font-style: italic;
+            font-weight: bold;
+            font-size: 30px;
+            color: #807e7b;
+    }
+
+
+    .read-more{
+        color: #807e7b;
+        font-weight: bold;
+        text-decoration:underline;
+    }
+}
